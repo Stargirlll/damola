@@ -1,0 +1,381 @@
+body{
+    font-family: sans-serif;
+    margin:0px;
+    overflow-x: hidden;
+}
+nav {
+    display:flex;
+    /* background-color: rgb(7, 7, 7);  */
+    padding:0;
+    align-items: center;
+    /* color:white; */
+}
+/* this takes care of the logo styling */
+.logo img {
+    width:20%;
+    height:70%;
+    margin-left:40px;
+    cursor:pointer;
+    
+}
+
+nav ul {
+    display:flex;
+    list-style: none;
+    justify-content: flex-end;   
+    /* margin-left:auto; */
+  
+}
+
+nav ul li {
+    margin-right:30px;
+}
+
+nav ul li a{
+    color:inherit;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    text-decoration:underline;
+    /* text-decoration-color: red; */
+    text-decoration-color:inherit;
+}
+
+/* Banner section */
+/* coour for the keyboard image and writing */
+.banner {
+    /* background-image: url('images/2.jpg'); */
+    background:linear-gradient(to right, rgba(0, 0, 255, 0.5), rgba(255, 0, 0, 0.7)), url('images/2.jpg');
+    height:95vh;
+    width:100vw;
+    background-size:cover;
+    color: #fff;
+    
+}
+
+.bannerCaption {
+   text-align:center;
+   margin:0 15%;
+   padding-top: 10%;
+
+}
+.bannerCaption h1 {
+    font-size: 70px;
+    margin-bottom:0;
+}
+
+.bannerbtn {
+    display: flex;
+    justify-content: center;
+    
+}
+ .bannerbtn .btn1 {
+    color:white;
+    background-color: #f00;
+    padding:15px;
+    border-radius: 20px;
+    margin-right: 30px;
+
+}
+
+.bannerbtn .btn2 {
+    color: #f00;
+    background-color: #fff;
+    padding:15px;
+    border-radius: 20px;
+
+}
+
+.btn1 a{
+    text-decoration: none;
+    color: inherit;
+}
+.btn1 a:hover {
+    font-weight: bold;
+}
+
+.btn2 a{
+    text-decoration: none;
+    color: inherit;
+}
+.btn2 a:hover {
+    font-weight: bold;
+}
+
+/* Main Container Section  */
+.container {
+    width:100%;
+}
+
+
+.container .heading {
+    font-size: 50px;
+    color: #f00;
+    text-align:center;
+    font-family:Verdana;
+    padding:5%;
+}
+.container .course1 {
+    display:flex;
+}
+
+.course1 .left{
+    flex:50%;       
+}
+
+.left img{
+    margin-left:80px;
+}
+
+.course1 .right{
+    flex:50%;
+    margin-right:4%;
+    word-spacing:10px;
+    /* to make it straight */
+    text-align: justify;
+}
+
+.course1 .right #first {
+    margin: 5% 0;
+    font-size:18px;
+    opacity: 70%;
+}
+
+.course1 .right #second {
+    font-size:15px;
+}
+
+.course1 .right h1 {
+    text-transform: uppercase;
+}
+.read {margin-top:45px;
+}
+
+/* Course 2 */
+
+.container .course2 {
+    display:flex;
+    background-color:black;
+    color:white;
+    margin-top:10% ;
+    padding:5% 0;
+}
+
+.course2 .left{
+    flex:50%;       
+}
+
+.right img{
+    margin-left:80px;
+}
+
+.course2 .right{
+    flex:50%;
+    margin-right:4%;
+    word-spacing:10px;
+    text-align: justify 
+}
+
+.course2 .left #first {
+    margin: 5% 0;
+    font-size:18px;
+    opacity: 70%;
+}
+
+.course2 .left #second {
+    font-size:15px;
+}
+
+.course2 .left h1 {
+    text-transform: uppercase;
+}
+button{margin:5px;
+}
+
+
+/* Training section */
+.training {
+    display: flex;
+    margin:10%;
+    
+   
+}
+
+.trainings {
+    padding:8% 2%;
+    text-align: center;
+    box-shadow: 3px 8px 8px gray;
+
+}
+
+.trainings p{
+    margin: 5% 0;
+    font-size:20px;
+}
+
+.trainings h3 {
+    padding-bottom:4%;
+    font-size: 25px;
+}
+
+.trainings a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.training .dark {
+    background-color: darkblue;
+    color:white;
+    margin:1%;
+    border-radius:10px;
+    
+   
+}
+
+.dark:hover {
+    padding: 9% 3%;
+    margin:1%;
+    transition: 1.5s;
+}
+.training .light {
+    background-color: gray;
+    color:white;
+    margin:1%;
+    border-radius:10px;  
+    
+}
+
+.light:hover {
+    padding: 9% 3%;
+    margin:1%;
+    transition: 1.5s;
+}
+
+/* Instructors section */
+.iMainContainer {
+    background-color: maroon;
+    width: 100%;
+    padding: 9% 2%;
+}
+
+.iMainContainer .heading {
+    font-size: 50px;
+    color:#fff;
+    text-align: center;
+
+}
+
+.iMainContainer .text {
+    color:white;
+    text-align: center;
+}
+
+.instructors img {
+    width: 250px;
+    height: 250px;
+
+}
+
+.iContainer {
+    display: flex;
+    justify-content: space-eve  nly;
+    /* margin-right: 20px;*/
+} 
+
+.instructors:hover {
+    border: 4px solid white;
+    padding: 1%;
+}
+
+/* Media Query for Mobile Device
+
+For mobile screen = 567px and below
+For tablet screen = 768px and below
+For tablet landscape mode or smaller laptop = 992px and below
+Other Laptops = greater than 992px, 1200px
+*/
+
+@media screen and (max-width:500px){
+    /* Navbar section */
+   
+    nav, .logo, nav ul {
+        display: block;
+        width:100%;
+        overflow-x:hidden;
+    }
+    nav ul li {
+        width:100%;
+        text-align:center;
+        margin-left:-5%;
+        padding:10px 0;
+    }
+    nav ul li:hover{
+        background-color: #fff;
+        color:#000;
+    }
+    .logo img{
+        width: 10%;
+        height: 30%;
+    }
+
+    /* Banner Section */
+    .banner{
+        padding:0 0 30% 0;
+    }
+    .bannerCaption {
+        text-align:center;
+        padding-top: 20%;
+     
+     }
+
+    .bannerCaption h1 {
+        font-size: 30px;
+        margin-bottom:0;
+    }
+    .bannerCaption p{
+        font-size: 12px;
+    }
+    .banner .bannerbtn{
+        padding-bottom: -20%;
+    }
+    .bannerbtn .btn1{
+        padding:10px;
+    }
+    .bannerbtn .btn2{
+        padding:10px;
+    }
+
+    /* Main Container Section  */
+    .container .heading {
+        font-size: 30px;
+        padding:5%;
+    }
+
+    .container .course1{
+        flex-direction: column;
+        margin:auto; 
+    }
+
+    .course1 .right{
+        margin-right: 0;
+    }
+    .container .course2{
+        flex-direction: column;
+        margin: auto;
+    } 
+
+    .course2 .left{
+        margin-left: 0;
+    }
+
+    .left img{
+        margin-left:40px;
+    }
+
+
+
+
+}
+
